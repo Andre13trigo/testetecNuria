@@ -1,0 +1,15 @@
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\bin\Debug\net6.0\questao2.exe
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\bin\Debug\net6.0\questao2.deps.json
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\bin\Debug\net6.0\questao2.runtimeconfig.json
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\bin\Debug\net6.0\questao2.dll
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\bin\Debug\net6.0\questao2.pdb
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.csproj.AssemblyReference.cache
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.AssemblyInfoInputs.cache
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.AssemblyInfo.cs
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.csproj.CoreCompileInputs.cache
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.dll
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\refint\questao2.dll
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.pdb
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\questao2.genruntimeconfig.cache
+C:\Users\André\source\repos\testetecNuria\questao2\questao2\obj\Debug\net6.0\ref\questao2.dll
