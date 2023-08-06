@@ -11,7 +11,7 @@ class MatrixSearch
 
         if (rowCountB > rowCountA || colCountB > colCountA)
         {
-            throw new ArgumentException("Submatrix B must have smaller or equal dimensions than matrix A.");
+            Console.WriteLine("Submatrix B must have smaller or equal dimensions than matrix A.");
         }
 
         int occurrences = 0;
@@ -59,7 +59,7 @@ class MatrixSearch
                                 listM.Add(chaveMatriz, lista);
                                 chaveMatriz++;
                             }
-                            
+
                         }
                     }
                 }
@@ -71,7 +71,6 @@ class MatrixSearch
 
     static void VerificarMatrizPreenchida(ref int occurrences, Dictionary<int, List<int[,]>> listM)
     {
-        bool lvalid = true;
         foreach (var matrizes in listM.Values)
         {
             foreach (var matriz in matrizes)
@@ -79,7 +78,7 @@ class MatrixSearch
                 // Obtém o número de linhas e colunas da matriz
                 int linhas = matriz.GetLength(0);
                 int colunas = matriz.GetLength(1);
-                lvalid = true;
+                bool lvalid = true;
                 // Percorre todos os elementos da matriz
                 for (int i = 0; i < linhas; i++)
                 {
@@ -198,19 +197,75 @@ class MatrixSearch
             }
         }
     }
+
+    //condição estipulada para que a matriz esteja completa é que não possua zeros
+    public static bool ValidaMatrizComZeros(int[,] A, int[,] B)
+    {
+        bool lValid = true;
+
+        // Obtém o número de linhas e colunas da matriz A
+        int linhas = A.GetLength(0);
+        int colunas = A.GetLength(1);
+        // Percorre todos os elementos da matriz
+        for (int i = 0; i < linhas; i++)
+        {
+            for (int j = 0; j < colunas; j++)
+            {
+                // Se encontrar um elemento com valor 0, retorna false
+                if (A[i, j] == 0)
+                {
+                    lValid = false;
+
+                }
+            }
+        }
+
+        // Obtém o número de linhas e colunas da matriz B
+        linhas = B.GetLength(0);
+        colunas = B.GetLength(1);
+        // Percorre todos os elementos da matriz
+        for (int i = 0; i < linhas; i++)
+        {
+            for (int j = 0; j < colunas; j++)
+            {
+                // Se encontrar um elemento com valor 0, retorna false
+                if (B[i, j] == 0)
+                {
+                    lValid = false;
+                }
+            }
+        }
+
+        return lValid;
+    }
 }
 
 class Program
 {
     static void Main()
     {
-        int[,] A = MatrixSearch.GenerateRandomMatrix(10, 8, 0, 10);
+        int occurrences = 0;
+        int[,] A = MatrixSearch.GenerateRandomMatrix(10, 8, 1, 10);
         MatrixSearch.PrintMatrix(A);
         Console.WriteLine();
-        int[,] B = MatrixSearch.GenerateRandomMatrix(2, 2, 0, 10);
+        int[,] B = MatrixSearch.GenerateRandomMatrix(3, 3, 1, 10);
         MatrixSearch.PrintMatrix(B);
         Console.WriteLine();
-        int occurrences = MatrixSearch.CountSubmatrixOccurrences(A, B);
-        Console.WriteLine("Number of occurrences of submatrix B in matrix A: " + occurrences);
+        if (!MatrixSearch.ValidaMatrizComZeros(A, B))
+        {
+            Console.WriteLine("One of the matrix contains one or more zeros, please use different matrix");
+        }
+        else
+        {
+            try
+            {
+                occurrences = MatrixSearch.CountSubmatrixOccurrences(A, B);
+                Console.WriteLine("Number of occurrences of submatrix B in matrix A: " + occurrences);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message.ToString());
+            }
+        }
     }
 }
