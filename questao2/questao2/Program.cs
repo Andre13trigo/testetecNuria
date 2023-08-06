@@ -160,24 +160,56 @@ class MatrixSearch
             }
         }
     }
+
+    public static int[,] GenerateRandomMatrix(int rows, int cols, int minValue, int maxValue)
+    {
+        int[,] matrix = new int[rows, cols];
+        Random random = new Random();
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                matrix[i, j] = random.Next(minValue, maxValue + 1);
+            }
+        }
+
+        return matrix;
+    }
+
+    public static void PrintMatrix(int[,] matrix)
+    {
+        int rows = matrix.GetLength(0);
+        int cols = matrix.GetLength(1);
+
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                Console.Write(matrix[i, j].ToString().PadLeft(2, '0'));
+                if (j < cols - 1)
+                {
+                    Console.Write(" ");
+                }
+            }
+            if (i < rows - 1)
+            {
+                Console.WriteLine();
+            }
+        }
+    }
 }
 
 class Program
 {
     static void Main()
     {
-        int[,] A = {
-            {6, 2, 3, 7},
-            {5, 6, 7, 8},
-            {9, 8, 7, 6},
-            {8, 4, 3, 7}
-        };
-
-        int[,] B = {
-            {6, 7},
-            {8, 7}
-        };
-
+        int[,] A = MatrixSearch.GenerateRandomMatrix(10, 8, 0, 10);
+        MatrixSearch.PrintMatrix(A);
+        Console.WriteLine();
+        int[,] B = MatrixSearch.GenerateRandomMatrix(2, 2, 0, 10);
+        MatrixSearch.PrintMatrix(B);
+        Console.WriteLine();
         int occurrences = MatrixSearch.CountSubmatrixOccurrences(A, B);
         Console.WriteLine("Number of occurrences of submatrix B in matrix A: " + occurrences);
     }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\André\\Source\\Repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj": {}
+    "C:\\Users\\André\\source\\repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\André\\Source\\Repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj": {
+    "C:\\Users\\André\\source\\repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\André\\Source\\Repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj",
+        "projectUniqueName": "C:\\Users\\André\\source\\repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj",
         "projectName": "TesteTecnicoNuria",
-        "projectPath": "C:\\Users\\André\\Source\\Repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj",
+        "projectPath": "C:\\Users\\André\\source\\repos\\testetecNuria\\TesteTecnicoNuria\\TesteTecnicoNuria.csproj",
         "packagesPath": "C:\\Users\\André\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\André\\Source\\Repos\\testetecNuria\\TesteTecnicoNuria\\obj\\",
+        "outputPath": "C:\\Users\\André\\source\\repos\\testetecNuria\\TesteTecnicoNuria\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

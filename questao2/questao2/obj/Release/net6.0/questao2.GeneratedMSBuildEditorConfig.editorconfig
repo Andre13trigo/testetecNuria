@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = TesteTecnicoNuria
-build_property.ProjectDir = C:\Users\André\source\repos\testetecNuria\TesteTecnicoNuria\
+build_property.RootNamespace = questao2
+build_property.ProjectDir = C:\Users\André\source\repos\testetecNuria\questao2\questao2\
